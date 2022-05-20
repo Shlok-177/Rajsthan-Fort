@@ -57,10 +57,10 @@ nav ul a:hover{
     padding: 80px 50px;
 }
 
-h1{
+/* h1{
     font-size: 60px;
     color: var(--blue);
-}
+} */
 p{
     font-size: 18px;
     line-height: 1.5;
@@ -106,5 +106,195 @@ img{
     .home .img{
         margin-top: 20px;
         width: 100%;
+    }
+}
+
+
+
+/* hiking section css start  */
+.hiking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./imgs/bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: white;
+}
+
+.hiking h2{
+    font-size:3rem;
+}
+
+.hiking_desc{
+    padding: 0 30%;
+    text-align: center;     
+}
+
+@media only screen and (max-width: 800px){
+    .hiking{
+        height: 600px;
+    }
+    .hiking h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hiking_desc{
+        padding: 0 10%;
+        font-size: 1rem;
+    }
+}
+
+/* explore section starts */
+.explore{
+    background-image: url('./imgs/bg-1.png');
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 800px){
+    .explore{
+        height: 600px;
+    }
+}
+
+
+/* after-explore starts */
+.after-explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 50px;
+
+}
+.after-explore div{
+    padding: 0 3%;
+}
+
+.after-explore div h2{
+    color: #deb37e;
+}
+
+@media only screen and (max-width: 800px){
+    .after-explore{
+        flex-direction: column;
+    }
+}
+
+/* quote section starts  */
+.quote{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('./imgs/bg-1.png') 
+        no-repeat center center/cover;
+        height: 800px;
+    }
+    
+    .quote h1{
+        font-size: 5rem;
+    }
+    
+    .quote p{
+        margin-top: -20px;
+        padding: 0 30%;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .quote span{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    @media only screen and (max-width: 800px){
+        .quote{
+            height: 600px;
+        }
+        .quote p{
+            font-size: 1.1rem;
+            padding: 0 10%;
+        }
+        .quote h1{
+            font-size: 4rem;
+        }
+    }
+    
+    
+/* contact section starts  */
+.contact{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./imgs/bg-1.png') 
+    no-repeat center center/cover;
+    height: 800px;
+    text-align: center;
+}
+
+.contact h1{
+    font-size: 3rem;
+    color: white;
+}
+    
+.contact p{
+    padding: 0 30%;
+    font-weight: 100;
+}
+
+.email{
+    width: 400px;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+.email:focus{
+    outline: none;
+}
+
+
+
+
+.subscribe{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: -60px;
+    font-size: 1rem;
+    background-color: #52504D;
+    color: white;
+}
+
+@media only screen and (max-width: 800px){
+    .contact{
+        height: 600px;
+    }
+
+    .contact h1{
+        font-size: 2rem;
+    }
+
+    .contact p{
+        padding: 0 10%;
+        font-size: 1rem;
+    }
+
+    .email{
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    .subscribe{
+        font-size: 0.9rem;
     }
 }
