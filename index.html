@@ -1,91 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Responsive navbar</title>
+    <!-- Importing the hamburger menu icon from remix icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <nav>
-        <a href="#" class="logo">Khawla</a>
-
-        <ul>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </ul>
-
+    <nav class="navbar container">
+        <a href="#" class="logo">Golden Wings</a>
+        <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><img src="img/hamburger.png" alt=""></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#Fort">Fort</a></li>
+                <li><a href="#slider">Images</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!----- Home Section Starts ---->
-    <section class="home" id="home">
-        <div class="left">
-            <h1>Your Big Idea Starts Here</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Facere, ducimus jfishf
+
+
+
+    <div class="container1">
+        <div class="decoration">
+
+        </div>
+        <div class="text">
+            <h1>IT'S TIME FOR HIKING</h1>
+            <p>23 Palaces And Forts In Rajasthan That You Must Visit In 2022 To Get In Touch With History!</p>
+            <button class=" ">view more</button>
+        </div>
+        <div class="image"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="main" id="Fort">
+        <div>
+            <img class="first-img" src="img/bg-2.avif" alt="">
+        </div>
+        <div class="content">
+            <h1 style=" margin-bottom: 0.3em"><span class="site-color">Kumbhalgarh Fort</span>
+            </h1>
+            <h1>Jodhpur</h1>
+            <p class="site-color2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aspernatur
+                officia aut saepe dicta iusto omnis doloremque eaque quae natus itaque, impedit dignissimos reiciendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem debitis mollitia neque dicta voluptatum deleniti obcaecati. Saepe aspernatur fugiat eligendi?</p>
+            <button class="content-btn">
+                VIEW FORT</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1 style=" margin-bottom: 0.3em"><span class="site-color">Amer Fort</span><span class="site-color2">
+                </span></h1>
+            <h1>Jaipur</h1>
+            <p class="site-color2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quos eveniet autem
+                quas facere accusantium quidem aspernatur ea? Ut ipsa possimus similique illo. Eaque, nam.</p>
+            <button class="content-btn">VIEW Fort</button>
+        </div>
+        <div>
+            <img class="second-img" src="img/bg-3.avif" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="img/bg-4.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1 style=" margin-bottom: 0.3em"><span class="site-color"></span><span class="site-color2"> Jaisalmer
+                    Fort</span>
+            </h1>
+            <h1>Jaisalmer</h1>
+
+            <p class="site-color2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore expedita
+                soluta ratione aliquam, ut architecto vel quibusdam facilis veniam libero esse iste aperiam reiciendis.
             </p>
-            <a href="#" class="btn">Explore</a>
+            <button class="content-btn">VIEW Fort</button>
         </div>
-        <div class="img">
-            <img src="https://i.ibb.co/Yjyq2XC/Hero.jpg" alt="">
+    </div>
+
+
+
+    <div class="wrapper" id="Blog">
+        <div class="Card_container">
+            <h1 class="title">A Beautiful Forts in India</h1>
+            <div class="inner-wrapper">
+                <div class="card">
+                    <div class="inner-card">
+                        <div class="img-wrapper">
+                            <img src="img/fort-1.avif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h1>Ranthambore Fort</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner-card">
+                        <div class="img-wrapper">
+                            <img src="img/fort-2.avif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h1>Chittorgarh Fort</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner-card">
+                        <div class="img-wrapper">
+                            <img src="img/fort-3.avif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h1>Taragarh Fort</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner-card">
+                        <div class="img-wrapper">
+                            <img src="img/fort-4.avif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h1>Gagron Fort</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner-card">
+                        <div class="img-wrapper">
+                            <img src="img/fort-5.avif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h1>Kumbhalgarh Fort</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="inner-card">
+                        <div class="img-wrapper">
+                            <img src="img/fort-6.avif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h1>Junagarh Fort</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
 
-    <!-- hiking section starts -->
-    <section class="hiking" id="hikinh">
-        <h2>Hiking in the mountains</h2>
-        <p class="hiking_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis </p>
-    </section>
 
-    <!-- explore section starts -->
-    <section class="explore" id="explore">
+    <div class="slider" id="slider">
+        <h1>See Beautifull Imgs of Forts</h1>
 
-    </section>
+        <div class="slides">
+            <div id="slide-1">
 
-    <!-- below explore section  -->
-    <section class="after-explore">
-        <div>
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro assumenda maiores.</p>
+            </div>
+            <div id="slide-2">
+
+            </div>
+            <div id="slide-3">
+
+            </div>
+            <div id="slide-4">
+
+            </div>
+            <div id="slide-5">
+
+            </div>
         </div>
-        <div>
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro assumenda maiores.</p>
-        </div>
-        <div>
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro assumenda maiores.</p>
-        </div>
-    </section>
 
-    <!-- quote section starts  -->
-    <section class="quote" id="quote">
-        <div>
-            <h1>"</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus dolor necessitatibus ex veritatis quia. Molestiae nulla eaque quas optio accusamus animi aperiam doloribus quo!</p>
-            <span>Lorem Ipsum</span>
-        </div>
-    </section>
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+        <a href="#slide-5">5</a>
+    </div>
 
-    <!-- contat section start  -->
-    <section class="contact" id="contact">
-        <h1>
-            Lorem, ipsum.
-        </h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, hic. Lorem ipsum dolor sit amet consectetur.
-        </p>
-        <div class="email-section">
-            <input type="text" placeholder="Your Email" class="email">
-            <button class="subscribe">SUBSCRIBE</button>
-        </div>
-    </section>
+ <!-- hiking section starts -->
+ <section class="hiking" id="hikinh">
+    <h2>Hiking in the mountains</h2>
+    <p class="hiking_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis </p>
+</section>
 
+<!-- explore section starts -->
+<section class="explore" id="explore">
+    <div>
+
+    </div>
+
+</section>
+
+<!-- below explore section  -->
+<section class="after-explore">
+    <div>
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro assumenda maiores.</p>
+    </div>
+    <div>
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro assumenda maiores.</p>
+    </div>
+    <div>
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro assumenda maiores.</p>
+    </div>
+</section>
+
+<!-- quote section starts  -->
+<section class="quote" id="quote">
+    <div>
+        <h1>"</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus dolor necessitatibus ex veritatis quia. Molestiae nulla eaque quas optio accusamus animi aperiam doloribus quo!</p>
+        <span>Lorem Ipsum</span>
+    </div>
+</section>
+
+<!-- contat section start  -->
+<section class="contact" id="contact">
+    <h1>
+        Lorem, ipsum.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, hic. Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <div class="email-section">
+        <input type="text" placeholder="Your Email" class="email">
+        <button class="subscribe">SUBSCRIBE</button>
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="row primary">
+            <div class="column about">
+
+                <h3>Golden Wings</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                    voluptatem corporis error non,
+                </p>
+
+
+            </div>
+
+            <div class="column links">
+                <h3>Some Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#faq">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="#cookies-policy">Cookies Policy</a>
+                    </li>
+                    <li>
+                        <a href="#terms-of-services">Terms Of Service</a>
+                    </li>
+                    <li>
+                        <a href="#support">Support</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="column links">
+                <h3>Some Links</h3>
+                <ul>
+                    <li>
+                        <a href="#faq">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="#cookies-policy">Cookies Policy</a>
+                    </li>
+                    <li>
+                        <a href="#terms-of-services">Terms Of Service</a>
+                    </li>
+                    <li>
+                        <a href="#support">Support</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column ">
+                <h3>Any Quarey</h3>
+                <div>
+                    <input type="email" placeholder="Your email id here" />
+                    <button>Send msg</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row copyright">
+            <div class="footer-menu">
+
+                <a href="index.html">Home</a>
+                <a href="#Fort">Fort</a>
+                <a href="contact.html">Contact</a>
+                <a href="#Blog">Blog</a>
+                <a href="#slider">Images</a>
+
+            </div>
+            <p>Copyright &copy; 2022 Design and Devloped by Shlok Jadeja</p>
+        </div>
+    </footer>
 </body>
+
 </html>
